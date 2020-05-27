@@ -38,7 +38,7 @@ Use the path [/users/login](https://) for the login.
 The request must include a username and password, and the result will be a token.
 
 ```bash
-WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
+https://bw4backend.herokuapp.com/users/login
 ```
 ***
 <br>
@@ -47,40 +47,40 @@ WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
 
 ### GET: Retrieve a list of all the posts made by all users
 ```bash
-WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
+https://bw4backend.herokuapp.com/posts
 ```
 ***
 
 ### GET: Retrieve a specific post 
 ```bash
-WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
+https://bw4backend.herokuapp.com/posts/:id
 ```
 **Notes:** Path variable id represents post id. 
 ***
 
 ### GET: Retrieve all posts from a specific user
 ```bash
-WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
+https://bw4backend.herokuapp.com/posts/user/:id
 ```
 **Notes:** Path variable id represents user id. 
 ***
 
 ### POST: Add new post
 ```bash
-WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
+https://bw4backend.herokuapp.com/posts
 ```
 **Notes:** Path variable id represents user id. 
 ***
 
 ### PUT: Update an existing post
 ```bash
-WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
+https://bw4backend.herokuapp.com/posts/:id
 ```
 **Notes:** Path variable id represents post id. 
 ***
 
 ### DELETE: Delete a specific post
 ```bash
-WAITING FOR FRANCES FOR OFFICIAL DEPLOYMENT THIS WILL UPDATE ONCE DEPLOYED
+https://bw4backend.herokuapp.com/posts/:id
 ```
 **Notes:** Path variable id represents the post id.<br>
