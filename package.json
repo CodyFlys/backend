@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index.js"
+    "test": "jest --watchAll",
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +19,12 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.21.1",
     "knex-cleaner": "^1.3.0",
+    "node-pre-gyp": "^0.14.0",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }

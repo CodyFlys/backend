@@ -50,7 +50,7 @@ router.get('/:id', (req, res) => {
     } 
     db.addPosts(newPost)
     .then(post => {
-      res.status(200).json({posts: post})
+      res.status(201).json({posts: post})
     })
     .catch(error => {
       res.status(500).json({message: "Could not retrieve data"})

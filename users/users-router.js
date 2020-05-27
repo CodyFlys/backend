@@ -4,6 +4,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const secrets = require('../config/secrets');
+const validateUser = require('../middleWare/validate-user');
 
 router.get('/', (req, res) => {
     db.getUsers()
@@ -26,7 +27,7 @@ router.get('/:id', (req, res) => {
     })
 })
 
-router.post('/register', (req, res) => {
+router.post('/register', validateUser, (req, res) => {
     const user = req.body;
 
     const hash = bcrypt.hashSync(user.password, 12)
@@ -42,7 +43,7 @@ router.post('/register', (req, res) => {
         })
 })
 
-router.post('/login', (req, res, next) => {
+router.post('/login', validateUser, (req, res, next) => {
     const {username, password} = req.body
 
     db.login(username)
